@@ -11,9 +11,9 @@ app.secret_key = "IAN"
 def home():
     return render_template('home.html')
 
-@app.route("/perf")
-def perf():
-    return render_template('perf.html')
+@app.route("/Performance")
+def Performance():
+    return render_template('Performance.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
