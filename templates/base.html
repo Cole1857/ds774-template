@@ -52,10 +52,10 @@
     <!-- Navigation Bar Links, Update as Necessary for your pages -->
 
     {% set navigation_bar = [
-        (url_for('home'), 'home', 'Home'),
-        (url_for('courses'), 'courses', 'Performance'),
-        (url_for('contact'), 'contact', 'Contact Us'),
-        (url_for('admin'), 'admin', 'Admin')
+        (url_for('home'), 'Home', 'Home'),
+        (url_for('courses'), 'Performance', 'Performance'),
+        (url_for('contact'), 'Contact Us', 'Contact Us'),
+        (url_for('admin'), 'Admin', 'Admin')
     ] -%}
     <!-- Loop to set proper link active in Navbar -->
     {% set active_page = active_page|default('home') -%}
