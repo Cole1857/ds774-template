@@ -15,6 +15,10 @@ def home():
 def Performance():
     return render_template('Performance.html')
 
+@app.route("/Announcements")
+def Announcements():
+    return render_template('Announcements.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     message = ''
