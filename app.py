@@ -30,7 +30,7 @@ def contact():
         result = contact_form(fname, lname, eaddress, message)
 
         if result:
-            return render_template('contact.html', message='Thank you for your submission')
+            return render_template('contact.html', message='Thank you for reporting this issue')
         else:
             return render_template('contact.html', message='Error with submission')
     else:
