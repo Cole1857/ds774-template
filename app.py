@@ -15,6 +15,10 @@ def home():
 def Documents():
     return render_template('Documents.html')
 
+@app.route("/Events")
+def Events():
+    return render_template('Events.html')
+
 @app.route("/Announcements")
 def Announcements():
     return render_template('Announcements.html')
