@@ -19,8 +19,8 @@ def Performance():
 def Announcements():
     return render_template('Announcements.html')
 
-@app.route('/Contact', methods=['GET', 'POST'])
-def Contact():
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
     message = ''
     if request.method == 'POST':
         fname = request.form['fname']
