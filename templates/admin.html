@@ -25,6 +25,7 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Issue Note</th>
+            <th scope="col">Status</th>
             <th scope="col">Manage Entry</th>
           </tr>
         </thead>
@@ -36,6 +37,7 @@
             <td>{{ record[1] }}</td>
             <td>{{ record[2] }}</td>
             <td>{{ record[3] }}</td>
+            <td>{{ record[4] }}</td>
             <td>
               <form action={{ "/edit?id=" ~ record[0] }} method="post" name="admin"><input
                   class="btn btn-primary btn-sm" name="admin" type="submit" value="Edit" /> <input
