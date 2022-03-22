@@ -97,7 +97,7 @@ def register():
         if get_user(username):
             new_id = add_user(username, password)
             error = "Registration sucessful. Please login"
-            return render_template('admin.html', error = error)
+            return render_template('Issue_Log.html', error = error)
         else:
             error = f"Username {username} not available"
         
@@ -116,14 +116,14 @@ def edit():
             message = request.form['message']
             print(fname, lname, eaddress, message)
             edit_record(msg_id, fname, lname, eaddress, message)
-            return redirect('/admin')
+            return redirect('/Issue_Log')
 
         elif request.form.get('edit') == 'cancel':
-            return redirect('/admin')
+            return redirect('/Issue_Log')
         
         elif request.form.get('admin') == 'Delete':
             delete_record(msg_id)
-            return redirect('/admin')
+            return redirect('/Issue_Log')
 
 
     entry = get_single_record(msg_id)
