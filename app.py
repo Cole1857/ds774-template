@@ -42,19 +42,7 @@ def admin():
     records = ''
     print(request)
 
-    message = ''
-    if request.method == 'POST':
-        fname = request.form['fname']
-        lname = request.form['lname']
-        eaddress = request.form['eaddress']
-        message = request.form['message']
-        result = contact_form(fname, lname, eaddress, message)
-
-        if result:
-            return render_template('admin.html')
-        else:
-            return render_template('admin.html', message='Error with submission')
-
+    
     # If method was POST, a form was submitted
     if request.method == 'POST':
 
