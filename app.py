@@ -11,9 +11,9 @@ app.secret_key = "Coleman"
 def home():
     return render_template('home.html')
 
-@app.route("/Performance")
-def Performance():
-    return render_template('Performance.html')
+@app.route("/Documents")
+def Documents():
+    return render_template('Documents.html')
 
 @app.route("/Announcements")
 def Announcements():
