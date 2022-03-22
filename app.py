@@ -51,7 +51,7 @@ def Issue_Log():
     if request.method == 'POST':
 
         # If the form was Login, perform log in steps
-        if request.form.get('Issue_Log') == 'Login':
+        if request.form.get('admin') == 'Login':
             username = request.form['username']
             password = request.form['password']
 
@@ -69,7 +69,7 @@ def Issue_Log():
                 error = 'Invalid Username or Password'
         
         # if form was logout button, end user session
-        elif request.form.get('Issue_Log')  == 'Logout':
+        elif request.form.get('admin')  == 'Logout':
             session.pop('user_id')
 
         
